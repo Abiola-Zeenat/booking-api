@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* File Layout */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Environment Settings */
+    "module": "commonjs",               
+    "target": "es2020",                 
+    "lib": ["esnext"],                  // Enable latest ES features
+    "types": ["node"],                  // Include Node.js typings
+    "esModuleInterop": true,            // Allow default imports for CommonJS modules
+
+    /* Other Outputs */
+    "sourceMap": true,                  // Generate source maps
+    "declaration": true,                // Generate .d.ts files
+    "declarationMap": true,             // Map .d.ts to source
+
+    /* Stricter Typechecking */
+    "strict": true,                     // Enable all strict checks
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* Recommended Options */
+    "skipLibCheck": true,               // Faster builds, safe in most cases
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
