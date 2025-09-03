@@ -1,6 +1,8 @@
 import app from './server/app';
 import { env } from './config/env';
 import { assertDatabaseConnectionOk, sequelize } from './db/sequelize';
+import './models'; 
+
 
 async function start() {
   await assertDatabaseConnectionOk();
