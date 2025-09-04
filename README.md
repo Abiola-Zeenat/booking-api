@@ -167,27 +167,30 @@ npm run test
 
 ------------------------------------------------------------------------
 
-## Project Structure
+## API Testing with Postman
 
-```
-src/
-├── controllers/
-│   └── propertyController.ts
-├── services/
-│   └── propertyService.ts
-├── models/
-│   ├── property.ts
-│   └── booking.ts
-├── routes/
-│   ├── propertyRoutes.ts
-│   └── bookingRoutes.ts
-├── migrations/
-├── seeders/
-├── config/
-│   └── config.js
-├── app.ts
-└── index.ts
-```
+You can test all API endpoints using the provided Postman collection.
+
+### Import the Collection
+
+1. Download the collection JSON file: [`postman_collection.json`](Booking API.postman_collection.json)  
+2. Open Postman and go to **File → Import → Upload Files**  
+3. Select the downloaded JSON file to import all endpoints.
+
+### Use the Hosted Link (Optional)
+
+If you prefer, you can open the collection directly in Postman via this link:  
+[Open in Postman](https://lively-satellite-526888.postman.co/workspace/zee's-workapace~67098a75-b56f-4b29-8aa2-d40da98b9c41/collection/42883657-c1298aa4-59d4-4ae6-a6cd-10bb090f0694?action=share&source=copy-link&creator=42883657)
+
+### Environment Variables
+
+Make sure to set the following variables in Postman:
+
+| Variable       | Description                   | Example             |
+|----------------|-------------------------------|-------------------|
+| `BASE_URL`     | Base URL of the API           | `http://localhost:8080` |
+
+> **Note:** Run your server locally (`npm run dev`) before sending requests.
 
 ------------------------------------------------------------------------
 
