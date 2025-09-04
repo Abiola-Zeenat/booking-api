@@ -1,7 +1,6 @@
 import { Op } from 'sequelize';
 import { BookingAttributes } from '../interfaces/booking';
-import Booking from '../models/booking';
-import Property from '../models/property';
+import {Property, Booking } from '../models';
 import { HttpException } from '../utils/http.exceptions';
 
  class BookingService {

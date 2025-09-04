@@ -1,9 +1,11 @@
-import { Sequelize } from 'sequelize';
+import { Sequelize } from 'sequelize-typescript';
 import { env } from '../config/env';
+import { Booking, Property } from '../models';
 
 export const sequelize = new Sequelize(env.databaseUrl, {
-  dialect: 'postgres',
+  dialect: "postgres",
   logging: false,
+  models: [Property, Booking], // ✅ no need to call initModel manually
 });
 
 // Helper function to verify DB connectivity
@@ -17,3 +19,4 @@ export async function assertDatabaseConnectionOk() {
     process.exit(1);
   }
 }
+

@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     /* File Layout */
+    
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
     "rootDir": "./src",
     "outDir": "./dist",
 
@@ -8,7 +12,7 @@
     "module": "commonjs",               
     "target": "es2020",                 
     "lib": ["esnext"],                  // Enable latest ES features
-    "types": ["node"],                  // Include Node.js typings
+    "types": ["node", "jest"],                  // Include Node.js typings
     "esModuleInterop": true,            // Allow default imports for CommonJS modules
 
     /* Other Outputs */
@@ -25,6 +29,6 @@
     "skipLibCheck": true,               // Faster builds, safe in most cases
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"],
+  "include": ["src", "tests"],
   "exclude": ["node_modules", "dist"]
 }

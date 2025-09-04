@@ -50,6 +50,16 @@ Make sure PostgreSQL is installed and running.
 
 Create a database (example: `booking_db`).
 
+```bash
+createdb booking_api
+```
+
+Or in `psql`:
+
+```sql
+CREATE DATABASE booking_api;
+```
+
 Update your `.env` file with database credentials:
 
 ```env
@@ -65,13 +75,16 @@ With Sequelize CLI:
 npx sequelize-cli db:migrate
 ```
 
-If you want to run seeders:
+### 5. Seed sample data (optional)
 
-```bash
-npx sequelize-cli db:seed:all
+Open `psql` or pgAdmin and insert sample properties:
+
+```sql
+INSERT INTO "Properties" (title, description, price_per_night, available_from, available_to, createdAt, updatedAt)
+VALUES ('Cozy Apartment', 'Nice city center spot', 100, '2025-09-01', '2025-09-30', NOW(), NOW());
 ```
 
-### 5. Start the server
+### 6. Start the server
 
 ```bash
 npm run dev
@@ -129,7 +142,7 @@ Request body:
 
 Cancel a booking by ID.
 
-#### [PUT] `/bookings/:id`
+#### [PUT] `/bookings`
 
 update/change a booking details.
 Request body:
