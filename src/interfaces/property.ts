@@ -15,3 +15,11 @@ export type PropertyCreationAttributes = Optional<
   PropertyAttributes,
   'id' | 'createdAt' | 'updatedAt'
 >;
+
+export interface IPropertyQuery{
+    page?: number;
+    limit?: number;
+    price?: number;
+    available_from?: Date;
+    available_to?: Date;
+}
