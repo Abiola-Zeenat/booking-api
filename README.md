@@ -173,7 +173,7 @@ You can test all API endpoints using the provided Postman collection.
 
 ### Import the Collection
 
-1. Download the collection JSON file: [`postman_collection.json`](Booking API.postman_collection.json)  
+1. Download the collection JSON file: [`postman_collection.json`](postman_collection.json)  
 2. Open Postman and go to **File → Import → Upload Files**  
 3. Select the downloaded JSON file to import all endpoints.
 
