@@ -1,4 +1,3 @@
-// src/models/index.ts
 import { Sequelize } from "sequelize-typescript";
 import { Property } from "./property";
 import { Booking } from "./booking";
