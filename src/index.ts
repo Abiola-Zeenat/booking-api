@@ -6,7 +6,6 @@ import "reflect-metadata";
 import { initDb } from './models';
 
 
-
 async function start() {
   await assertDatabaseConnectionOk();
   await initDb();

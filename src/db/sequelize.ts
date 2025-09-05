@@ -5,7 +5,7 @@ import { Booking, Property } from '../models';
 export const sequelize = new Sequelize(env.databaseUrl, {
   dialect: "postgres",
   logging: false,
-  models: [Property, Booking], // ✅ no need to call initModel manually
+  models: [Property, Booking], 
 });
 
 // Helper function to verify DB connectivity

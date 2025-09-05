@@ -37,7 +37,7 @@ describe("Booking API Integration Tests", () => {
     const payload = {
       property_id: propertyId,
       user_name: "John Doe",
-      start_date: "2025-09-05",
+      start_date: "2025-09-08",
       end_date: "2025-09-10",
     };
 
